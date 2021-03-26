@@ -12,10 +12,22 @@
   <body>
     <section class="main">
       <button id="show-popup-form" class="btn btn-main">Click me!</button>
-      <!-- Display success message below -->
     </section>
     <div class="popup">
-      <!-- Here goes your popup form HTML code -->
+      <button id="hide-popup-form" class="btn-close-popup" aria-label='Zamknij popup'>
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+    </button>
+      <h3 class="heading-tertiary">Login</h3>
+      <form action="#" class="form">
+        <input type="email" class="input" placeholder="E-mail">
+        <input type="password" class="input" placeholder="Password">
+        <div class="input-group">
+          <input class="input" type="checkbox" id="agreement" name="permission" >
+          <label for="agreement">I agree to terms & conditions.</label>
+        </div>
+        <button id="submit-form" class="input input--btn">Submit</button>
+      </form>
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

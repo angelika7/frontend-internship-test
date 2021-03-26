@@ -1,20 +1,24 @@
 // Main styles
+// Colors
 $primary-color: #fcaf32;
 $secondary-color: #fc888e;
 
 html,
 body {
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+// Others styles
 .main {
   align-items: center;
   background: linear-gradient(-45deg, $primary-color 0%, $secondary-color 100%);
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .btn-main {
