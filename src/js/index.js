@@ -57,6 +57,11 @@ const validate = (e) => {
   password.value = '';
   checkbox.checked = false;
 
+  setTimeout(() => {
+    popup.classList.add('hide-form');
+    showPopup.textContent = "Thank you!"
+  }, 3000)
+
   return true; // Can submit the form data to the server
 }
 
