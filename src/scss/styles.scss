@@ -26,6 +26,7 @@ $white-color: #fff;
   opacity: 0;
   padding: 40px;
   position: absolute;
+  top: -100%;
   transform: translate(-50%, -50%);
 }
 
@@ -53,11 +54,6 @@ $white-color: #fff;
       background-color: $secondary-color;
     }
   }
-}
-
-.heading-tertiary {
-  font-family: 'Lobster', cursive;
-  font-size: 30px;
 }
 
 .btn-close-popup {
@@ -94,11 +90,11 @@ $white-color: #fff;
   }
 }
 
-.show-form {
+.show-popup {
   animation: showForm .5s ease-in-out forwards;
 }
 
-.hide-form {
+.hide-popup {
   animation: hideForm .5s ease-in-out alternate;
 }
 
@@ -129,6 +125,7 @@ $white-color: #fff;
   }
 }
 
+// Custom checkbox
 .input-group {
   padding-left: 30px;
   position: relative;
@@ -136,7 +133,6 @@ $white-color: #fff;
 
 // Hide the browser's default checkbox 
 .input-group input {
-  cursor: pointer;
   height: 0;
   opacity: 0;
   position: absolute;
@@ -147,6 +143,7 @@ $white-color: #fff;
 .checkmark {
   background-color: $white-color;
   border: 1px solid $black-color;
+  cursor: pointer;
   height: 20px;
   left: 0;
   position: absolute;
@@ -175,4 +172,16 @@ $white-color: #fff;
   top: -1px;
   transform: rotate(45deg);
   width: 9px;
+}
+
+// Typography
+.heading-tertiary {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
+
+.success-message {
+  display: none;
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
 }
